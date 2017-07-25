@@ -1,0 +1,13 @@
+env.info("Starting the script******************");
+
+BASE:TraceOnOff(false);
+BASE:TraceAll(false);
+
+function spawnMinVodyHawk()
+  BASE:E("Spawning Min Vody Hawk...")
+
+  local zone = ZONE:New("MinVody_Spawn");
+  local hawkSpawn = SPAWN:New("Hawk_1"):SpawnInZone(zone);
+end
+
+BASE:E("Ending the script********************");
